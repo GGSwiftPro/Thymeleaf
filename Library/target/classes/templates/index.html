@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" th:href="@{css/homepage.css}">
+</head>
+<body>
+<header>
+    <nav>
+         <ul>
+             <li><a th:href="@{/}">Home</a></li>
+            <li><a th:href="@{/Login}">Login</a></li>
+             <li><a href="Login.html">Login</a></li>
+         </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to the web</h1>
+    <p>Today's date is: <span th:text="${today}"></span></p>
+</main>
+</body>
+</html>
